@@ -10,5 +10,6 @@ target 'SpaceX' do
 pod 'lottie-ios', '~> 3.1.6'
 pod 'Kingfisher', '~> 5.13'
 pod 'SwiftLint', '~> 0.39.2'
+pod 'Alamofire', '~> 5.0.0-rc.2'
 
 end

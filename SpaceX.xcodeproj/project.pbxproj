@@ -9,10 +9,33 @@
 /* Begin PBXBuildFile section */
 		566B0E98D23A569D3C9C3FFC /* Pods_SpaceX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A12767197E4C9C7C9AF415A6 /* Pods_SpaceX.framework */; };
 		F601236329643267007DF5D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601236229643267007DF5D4 /* AppDelegate.swift */; };
-		F601236729643267007DF5D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601236629643267007DF5D4 /* ViewController.swift */; };
-		F601236A29643267007DF5D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F601236829643267007DF5D4 /* Main.storyboard */; };
 		F601236C29643269007DF5D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F601236B29643269007DF5D4 /* Assets.xcassets */; };
 		F601236F29643269007DF5D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F601236D29643269007DF5D4 /* LaunchScreen.storyboard */; };
+		F601238129645C10007DF5D4 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601238029645C10007DF5D4 /* DependencyProvider.swift */; };
+		F601238329645C39007DF5D4 /* HasNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601238229645C39007DF5D4 /* HasNetworkService.swift */; };
+		F601238529645F8F007DF5D4 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601238429645F8F007DF5D4 /* NetworkService.swift */; };
+		F6012387296467DD007DF5D4 /* SpacexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6012386296467DD007DF5D4 /* SpacexService.swift */; };
+		F6012389296469CA007DF5D4 /* Launch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6012388296469CA007DF5D4 /* Launch.swift */; };
+		F601238B296469CE007DF5D4 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601238A296469CE007DF5D4 /* Rocket.swift */; };
+		F601238D29647859007DF5D4 /* LoaderHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601238C29647859007DF5D4 /* LoaderHUD.swift */; };
+		F601238F29647882007DF5D4 /* loader-animation.json in Resources */ = {isa = PBXBuildFile; fileRef = F601238E29647881007DF5D4 /* loader-animation.json */; };
+		F601239129647953007DF5D4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601239029647953007DF5D4 /* AppCoordinator.swift */; };
+		F601239429647982007DF5D4 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601239329647982007DF5D4 /* BaseCoordinator.swift */; };
+		F60123962964798B007DF5D4 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123952964798B007DF5D4 /* Router.swift */; };
+		F6012399296479D1007DF5D4 /* CoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6012398296479D1007DF5D4 /* CoordinatorType.swift */; };
+		F601239B296479DA007DF5D4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601239A296479DA007DF5D4 /* Coordinator.swift */; };
+		F601239D296479E0007DF5D4 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601239C296479E0007DF5D4 /* Presentable.swift */; };
+		F601239F296479E5007DF5D4 /* RouterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F601239E296479E5007DF5D4 /* RouterType.swift */; };
+		F60123A329647A4A007DF5D4 /* AppModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123A229647A4A007DF5D4 /* AppModuleFactory.swift */; };
+		F60123A529647A52007DF5D4 /* AppModuleFactoryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123A429647A52007DF5D4 /* AppModuleFactoryType.swift */; };
+		F60123A929647AB5007DF5D4 /* LaunchListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123A829647AB5007DF5D4 /* LaunchListViewController.swift */; };
+		F60123AB29647ABC007DF5D4 /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123AA29647ABC007DF5D4 /* LaunchListViewModel.swift */; };
+		F60123AD29647AEA007DF5D4 /* RocketDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123AC29647AEA007DF5D4 /* RocketDetailsViewController.swift */; };
+		F60123AF29647AF7007DF5D4 /* RocketDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123AE29647AF7007DF5D4 /* RocketDetailsViewModel.swift */; };
+		F60123B729647C85007DF5D4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123B629647C85007DF5D4 /* CustomNavigationController.swift */; };
+		F60123B9296485F0007DF5D4 /* LaunchListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60123B8296485F0007DF5D4 /* LaunchListViewController.storyboard */; };
+		F60123BB296485FF007DF5D4 /* RocketDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60123BA296485FF007DF5D4 /* RocketDetailsViewController.storyboard */; };
+		F60123BD29648651007DF5D4 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123BC29648651007DF5D4 /* StoryboardLoadable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +44,34 @@
 		A12767197E4C9C7C9AF415A6 /* Pods_SpaceX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpaceX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F601235F29643267007DF5D4 /* SpaceX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F601236229643267007DF5D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F601236629643267007DF5D4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F601236929643267007DF5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F601236B29643269007DF5D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F601236E29643269007DF5D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F601237029643269007DF5D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F601238029645C10007DF5D4 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		F601238229645C39007DF5D4 /* HasNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HasNetworkService.swift; sourceTree = "<group>"; };
+		F601238429645F8F007DF5D4 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		F6012386296467DD007DF5D4 /* SpacexService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpacexService.swift; sourceTree = "<group>"; };
+		F6012388296469CA007DF5D4 /* Launch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Launch.swift; sourceTree = "<group>"; };
+		F601238A296469CE007DF5D4 /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		F601238C29647859007DF5D4 /* LoaderHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderHUD.swift; sourceTree = "<group>"; };
+		F601238E29647881007DF5D4 /* loader-animation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "loader-animation.json"; sourceTree = "<group>"; };
+		F601239029647953007DF5D4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		F601239329647982007DF5D4 /* BaseCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		F60123952964798B007DF5D4 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F6012398296479D1007DF5D4 /* CoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorType.swift; sourceTree = "<group>"; };
+		F601239A296479DA007DF5D4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		F601239C296479E0007DF5D4 /* Presentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
+		F601239E296479E5007DF5D4 /* RouterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterType.swift; sourceTree = "<group>"; };
+		F60123A229647A4A007DF5D4 /* AppModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModuleFactory.swift; sourceTree = "<group>"; };
+		F60123A429647A52007DF5D4 /* AppModuleFactoryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModuleFactoryType.swift; sourceTree = "<group>"; };
+		F60123A829647AB5007DF5D4 /* LaunchListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewController.swift; sourceTree = "<group>"; };
+		F60123AA29647ABC007DF5D4 /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
+		F60123AC29647AEA007DF5D4 /* RocketDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailsViewController.swift; sourceTree = "<group>"; };
+		F60123AE29647AF7007DF5D4 /* RocketDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailsViewModel.swift; sourceTree = "<group>"; };
+		F60123B629647C85007DF5D4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		F60123B8296485F0007DF5D4 /* LaunchListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchListViewController.storyboard; sourceTree = "<group>"; };
+		F60123BA296485FF007DF5D4 /* RocketDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RocketDetailsViewController.storyboard; sourceTree = "<group>"; };
+		F60123BC29648651007DF5D4 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,8 +134,6 @@
 				F601237D29643E3F007DF5D4 /* Services */,
 				F601237E29643E45007DF5D4 /* Models */,
 				F601237F29643E4B007DF5D4 /* Protocols */,
-				F601236629643267007DF5D4 /* ViewController.swift */,
-				F601236829643267007DF5D4 /* Main.storyboard */,
 				F601236D29643269007DF5D4 /* LaunchScreen.storyboard */,
 				F601237029643269007DF5D4 /* Info.plist */,
 			);
@@ -100,6 +144,9 @@
 			isa = PBXGroup;
 			children = (
 				F601236229643267007DF5D4 /* AppDelegate.swift */,
+				F60123B629647C85007DF5D4 /* CustomNavigationController.swift */,
+				F601238029645C10007DF5D4 /* DependencyProvider.swift */,
+				F601239029647953007DF5D4 /* AppCoordinator.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -107,6 +154,9 @@
 		F601237729643DF5007DF5D4 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				F60123A729647A9A007DF5D4 /* RocketDetailsModule */,
+				F60123A629647A93007DF5D4 /* LaunchListModule */,
+				F60123A029647A39007DF5D4 /* AppMainFlow */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -114,6 +164,7 @@
 		F601237829643E0A007DF5D4 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
+				F601238229645C39007DF5D4 /* HasNetworkService.swift */,
 			);
 			path = Dependencies;
 			sourceTree = "<group>";
@@ -128,6 +179,7 @@
 		F601237A29643E1C007DF5D4 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				F601238C29647859007DF5D4 /* LoaderHUD.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -135,6 +187,7 @@
 		F601237B29643E2F007DF5D4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				F601238E29647881007DF5D4 /* loader-animation.json */,
 				F601236B29643269007DF5D4 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -143,6 +196,8 @@
 		F601237C29643E35007DF5D4 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
+				F601239229647976007DF5D4 /* BaseImplementation */,
+				F6012397296479BD007DF5D4 /* Protocols */,
 			);
 			path = Coordinators;
 			sourceTree = "<group>";
@@ -150,6 +205,8 @@
 		F601237D29643E3F007DF5D4 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				F601238429645F8F007DF5D4 /* NetworkService.swift */,
+				F6012386296467DD007DF5D4 /* SpacexService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -157,6 +214,8 @@
 		F601237E29643E45007DF5D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F6012388296469CA007DF5D4 /* Launch.swift */,
+				F601238A296469CE007DF5D4 /* Rocket.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +225,64 @@
 			children = (
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F601239229647976007DF5D4 /* BaseImplementation */ = {
+			isa = PBXGroup;
+			children = (
+				F601239329647982007DF5D4 /* BaseCoordinator.swift */,
+				F60123952964798B007DF5D4 /* Router.swift */,
+			);
+			path = BaseImplementation;
+			sourceTree = "<group>";
+		};
+		F6012397296479BD007DF5D4 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F6012398296479D1007DF5D4 /* CoordinatorType.swift */,
+				F601239A296479DA007DF5D4 /* Coordinator.swift */,
+				F601239C296479E0007DF5D4 /* Presentable.swift */,
+				F601239E296479E5007DF5D4 /* RouterType.swift */,
+				F60123BC29648651007DF5D4 /* StoryboardLoadable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F60123A029647A39007DF5D4 /* AppMainFlow */ = {
+			isa = PBXGroup;
+			children = (
+				F60123A129647A40007DF5D4 /* ModuleFactory */,
+			);
+			path = AppMainFlow;
+			sourceTree = "<group>";
+		};
+		F60123A129647A40007DF5D4 /* ModuleFactory */ = {
+			isa = PBXGroup;
+			children = (
+				F60123A229647A4A007DF5D4 /* AppModuleFactory.swift */,
+				F60123A429647A52007DF5D4 /* AppModuleFactoryType.swift */,
+			);
+			path = ModuleFactory;
+			sourceTree = "<group>";
+		};
+		F60123A629647A93007DF5D4 /* LaunchListModule */ = {
+			isa = PBXGroup;
+			children = (
+				F60123A829647AB5007DF5D4 /* LaunchListViewController.swift */,
+				F60123AA29647ABC007DF5D4 /* LaunchListViewModel.swift */,
+				F60123B8296485F0007DF5D4 /* LaunchListViewController.storyboard */,
+			);
+			path = LaunchListModule;
+			sourceTree = "<group>";
+		};
+		F60123A729647A9A007DF5D4 /* RocketDetailsModule */ = {
+			isa = PBXGroup;
+			children = (
+				F60123AC29647AEA007DF5D4 /* RocketDetailsViewController.swift */,
+				F60123AE29647AF7007DF5D4 /* RocketDetailsViewModel.swift */,
+				F60123BA296485FF007DF5D4 /* RocketDetailsViewController.storyboard */,
+			);
+			path = RocketDetailsModule;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +346,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F601236F29643269007DF5D4 /* LaunchScreen.storyboard in Resources */,
+				F601238F29647882007DF5D4 /* loader-animation.json in Resources */,
 				F601236C29643269007DF5D4 /* Assets.xcassets in Resources */,
-				F601236A29643267007DF5D4 /* Main.storyboard in Resources */,
+				F60123B9296485F0007DF5D4 /* LaunchListViewController.storyboard in Resources */,
+				F60123BB296485FF007DF5D4 /* RocketDetailsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,22 +402,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F601236729643267007DF5D4 /* ViewController.swift in Sources */,
+				F601238529645F8F007DF5D4 /* NetworkService.swift in Sources */,
+				F601238129645C10007DF5D4 /* DependencyProvider.swift in Sources */,
+				F60123A329647A4A007DF5D4 /* AppModuleFactory.swift in Sources */,
+				F60123AB29647ABC007DF5D4 /* LaunchListViewModel.swift in Sources */,
+				F601239129647953007DF5D4 /* AppCoordinator.swift in Sources */,
+				F60123AF29647AF7007DF5D4 /* RocketDetailsViewModel.swift in Sources */,
+				F601238329645C39007DF5D4 /* HasNetworkService.swift in Sources */,
+				F60123962964798B007DF5D4 /* Router.swift in Sources */,
+				F601239B296479DA007DF5D4 /* Coordinator.swift in Sources */,
+				F60123A529647A52007DF5D4 /* AppModuleFactoryType.swift in Sources */,
+				F60123B729647C85007DF5D4 /* CustomNavigationController.swift in Sources */,
+				F6012399296479D1007DF5D4 /* CoordinatorType.swift in Sources */,
+				F60123A929647AB5007DF5D4 /* LaunchListViewController.swift in Sources */,
+				F60123AD29647AEA007DF5D4 /* RocketDetailsViewController.swift in Sources */,
+				F601239D296479E0007DF5D4 /* Presentable.swift in Sources */,
+				F601238D29647859007DF5D4 /* LoaderHUD.swift in Sources */,
+				F6012389296469CA007DF5D4 /* Launch.swift in Sources */,
+				F60123BD29648651007DF5D4 /* StoryboardLoadable.swift in Sources */,
 				F601236329643267007DF5D4 /* AppDelegate.swift in Sources */,
+				F6012387296467DD007DF5D4 /* SpacexService.swift in Sources */,
+				F601239429647982007DF5D4 /* BaseCoordinator.swift in Sources */,
+				F601239F296479E5007DF5D4 /* RouterType.swift in Sources */,
+				F601238B296469CE007DF5D4 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		F601236829643267007DF5D4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F601236929643267007DF5D4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F601236D29643269007DF5D4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,7 +568,7 @@
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -464,7 +596,7 @@
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiredDeviceCapabilities = armv7;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
