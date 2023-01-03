@@ -23,4 +23,41 @@ class SpacexService: NetworkService {
         self.session = session
     }
 
+    /// - Parameters: None
+    /// - Returns: A list of most upcoming launches for the last 3 years
+    func getUpcomingTrips(completion: @escaping (Result<[Launch], ServiceError>) -> Void) {
+        let urlString = baseUrl + "launches"
+        AF.request(urlString).responseData { response in
+            switch response.result {
+            case .success(let launchList):
+                do {
+                    let model = try JSONDecoder().decode([Launch].self, from: launchList)
+                    completion(.success(model))
+                } catch {
+                    completion(.failure(.cannotParse))
+                }
+            case .failure:
+                completion(.failure(.cannotParse))
+            }
+        }
+    }
+
+    /// - Parameters: id: String (id of the rocket)
+    /// - Returns: Get Rocket details for a launch
+    func getRocketDetails(id: String, completion: @escaping (Result<Rocket, ServiceError>) -> Void) {
+        let urlString = baseUrl + "rockets/\(id)"
+        AF.request(urlString).responseData { response in
+            switch response.result {
+            case .success(let rocketResult):
+                do {
+                    let model = try JSONDecoder().decode(Rocket.self, from: rocketResult)
+                    completion(.success(model))
+                } catch {
+                    completion(.failure(.cannotParse))
+                }
+            case .failure:
+                completion(.failure(.cannotParse))
+            }
+        }
+    }
 }
