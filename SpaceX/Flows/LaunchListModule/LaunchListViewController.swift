@@ -24,6 +24,12 @@ class LaunchListViewController: UIViewController, Presentable, StoryboardLoadabl
         configureViews()
         fetchTrips()
     }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(false, animated: true)
+    }
+
 }
 
 // MARK: - Private helper methods
