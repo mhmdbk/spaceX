@@ -33,6 +33,10 @@ final class AppCoordinator: BaseCoordinator {
 private extension AppCoordinator {
     func showLaunchListModule() {
         let launchListViewController = moduleFactory.makeLaunchListModule(dependencies: dependencyProvider)
+        launchListViewController.onLaunchItemTapped = { [weak self] item in
+            guard let self = self else { return }
+            self.showRocketDetailsModule(launch: item)
+        }
         router.setRootModule(launchListViewController, hideBar: false)
     }
 

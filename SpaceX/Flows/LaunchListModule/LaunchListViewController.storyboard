@@ -16,9 +16,33 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="akt-k7-Bda">
+                                <rect key="frame" x="20" y="84" width="386" height="180"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="gxJ-BA-PaP"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="NOh-GQ-e15">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="akt-k7-Bda" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="A9s-xy-3sy"/>
+                            <constraint firstItem="akt-k7-Bda" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="R4h-Wv-38P"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="akt-k7-Bda" secondAttribute="trailing" constant="8" id="TRf-Jw-Yz4"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="akt-k7-Bda" id="LuH-2a-MCF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

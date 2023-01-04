@@ -15,6 +15,10 @@ class LaunchListViewModel {
 
     var launchList = [Launch]()
 
+    var nbOfLaunches: Int {
+        return launchList.count
+    }
+
     init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
@@ -40,7 +44,7 @@ extension LaunchListViewModel {
     }
 }
 
-// MARK: - Private Helper Methods
+// MARK: - Helper Methods
 extension LaunchListViewModel {
     private func filterLaunchList() {
         launchList = launchList
@@ -49,5 +53,10 @@ extension LaunchListViewModel {
                 guard let tripDate = $0.date?.toDate() else { return false }
                 return tripDate.checkIfDateInRange(years: 3)
             }
+    }
+
+    func launchCellModel(at index: IndexPath) -> LaunchViewModel {
+        let item = launchList[index.row]
+        return LaunchViewModel(launch: item)
     }
 }
