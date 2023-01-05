@@ -36,6 +36,7 @@
 		F60123B9296485F0007DF5D4 /* LaunchListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60123B8296485F0007DF5D4 /* LaunchListViewController.storyboard */; };
 		F60123BB296485FF007DF5D4 /* RocketDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60123BA296485FF007DF5D4 /* RocketDetailsViewController.storyboard */; };
 		F60123BD29648651007DF5D4 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123BC29648651007DF5D4 /* StoryboardLoadable.swift */; };
+		F604B43A2966C83D005B9081 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F604B4392966C83D005B9081 /* UIView+CornerRadius.swift */; };
 		F6898EB72964C203009A444F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6898EB62964C203009A444F /* UIViewController+Extensions.swift */; };
 		F6898EB92964C532009A444F /* String+ToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6898EB82964C532009A444F /* String+ToDate.swift */; };
 		F6898EBB2964C557009A444F /* Date+Dateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6898EBA2964C557009A444F /* Date+Dateable.swift */; };
@@ -92,6 +93,7 @@
 		F60123B8296485F0007DF5D4 /* LaunchListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchListViewController.storyboard; sourceTree = "<group>"; };
 		F60123BA296485FF007DF5D4 /* RocketDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RocketDetailsViewController.storyboard; sourceTree = "<group>"; };
 		F60123BC29648651007DF5D4 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
+		F604B4392966C83D005B9081 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
 		F6898EB62964C203009A444F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F6898EB82964C532009A444F /* String+ToDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ToDate.swift"; sourceTree = "<group>"; };
 		F6898EBA2964C557009A444F /* Date+Dateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Dateable.swift"; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				F6898EB82964C532009A444F /* String+ToDate.swift */,
 				F6898EBA2964C557009A444F /* Date+Dateable.swift */,
 				F6898EC02965876F009A444F /* UILabel+Extensions.swift */,
+				F604B4392966C83D005B9081 /* UIView+CornerRadius.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 				F60123A329647A4A007DF5D4 /* AppModuleFactory.swift in Sources */,
 				F60123AB29647ABC007DF5D4 /* LaunchListViewModel.swift in Sources */,
 				F6898EB72964C203009A444F /* UIViewController+Extensions.swift in Sources */,
+				F604B43A2966C83D005B9081 /* UIView+CornerRadius.swift in Sources */,
 				F601239129647953007DF5D4 /* AppCoordinator.swift in Sources */,
 				F60123AF29647AF7007DF5D4 /* RocketDetailsViewModel.swift in Sources */,
 				F601238329645C39007DF5D4 /* HasNetworkService.swift in Sources */,

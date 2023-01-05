@@ -10,7 +10,8 @@ import UIKit
 class LaunchListViewController: UIViewController, Presentable, StoryboardLoadable {
 
     @IBOutlet private weak var collectionView: UICollectionView!
-
+    @IBOutlet private weak var goldButton: UIButton!
+    
     var viewModel: LaunchListViewModel!
 
     var onLaunchItemTapped: ((Launch) -> Void)?
