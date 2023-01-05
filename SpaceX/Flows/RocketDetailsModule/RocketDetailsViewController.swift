@@ -14,7 +14,7 @@ class RocketDetailsViewController: UIViewController, Presentable, StoryboardLoad
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var numberLabel: UILabel!
     @IBOutlet private weak var dateLabel: UILabel!
-    @IBOutlet private weak var descriptionTextView: UITextView!
+    @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var readMoreButton: UIButton!
     @IBOutlet private weak var rocketImageView: UIImageView!
     @IBOutlet private weak var detailsView: UIView!
@@ -39,7 +39,7 @@ private extension RocketDetailsViewController {
         detailsView.clipsToBounds = true
         detailsView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         nameLabel.text = viewModel.name
-        descriptionTextView.text = viewModel.description
+        descriptionLabel.text = viewModel.description
         if let number = viewModel.launch.flightNumber {
             numberLabel.text = "\(number)"
         }
