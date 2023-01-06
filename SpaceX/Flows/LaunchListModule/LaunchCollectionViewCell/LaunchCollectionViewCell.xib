@@ -92,6 +92,11 @@
                 <constraint firstAttribute="bottom" secondItem="bMQ-WL-1q3" secondAttribute="bottom" id="oDb-80-PmM"/>
             </constraints>
             <size key="customSize" width="227" height="170"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="45"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="dateLabel" destination="9pw-9S-H9n" id="ymK-Un-WEy"/>
                 <outlet property="mainView" destination="bMQ-WL-1q3" id="2Xt-PL-PgD"/>

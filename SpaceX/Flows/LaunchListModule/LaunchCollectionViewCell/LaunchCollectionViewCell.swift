@@ -19,7 +19,6 @@ class LaunchCollectionViewCell: UICollectionViewCell, CellIdentifiable {
 
     func configure(viewModel: LaunchViewModel) {
         self.viewModel = viewModel
-        self.layer.cornerRadius = 45
         nameLabel.text = viewModel.displayName
         dateLabel.text = viewModel.dateText
         if let flightNumber = viewModel.flightNumber {

@@ -10,13 +10,12 @@ import UIKit
 class LaunchListViewController: UIViewController, Presentable, StoryboardLoadable {
 
     @IBOutlet private weak var collectionView: UICollectionView!
-    @IBOutlet private weak var goldButton: UIButton!
     
     var viewModel: LaunchListViewModel!
 
     var onLaunchItemTapped: ((Launch) -> Void)?
 
-    private let cellWidth: CGFloat = 190
+    private let cellWidth: CGFloat = 210
     private let cellHeight: CGFloat = 200
 
     override func viewDidLoad() {
@@ -43,7 +42,7 @@ private extension LaunchListViewController {
         let bellButton   = UIBarButtonItem(image: bellImage, style: .plain, target: self, action: #selector(didTapBellButton(sender:)))
         let searchButton = UIBarButtonItem(image: searchImage, style: .plain, target: self, action: #selector(didTapSearchButton(sender:)))
         navigationItem.rightBarButtonItems = [bellButton, searchButton]
-        
+
         let titleLabel = UILabel()
         titleLabel.text = "Launches"
         titleLabel.applyStyle(textColor: .black, font: Fonts.font(name: .font800, size: 24))
