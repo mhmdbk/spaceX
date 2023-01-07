@@ -73,7 +73,6 @@ private extension LaunchListViewController {
                     print("error while fetching trips: \(error.debugDescription)")
                     return
                 }
-                print("the fetched trips are: \(self.viewModel.launchList)")
                 self.collectionView.reloadData()
             }
         }

@@ -59,7 +59,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDl-dq-Hxt">
-                                <rect key="frame" x="20" y="70" width="167" height="0.0"/>
+                                <rect key="frame" x="20" y="60" width="167" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -80,7 +80,7 @@
                             <constraint firstAttribute="trailing" secondItem="9pw-9S-H9n" secondAttribute="trailing" constant="20" id="C0U-is-Fyd"/>
                             <constraint firstAttribute="trailing" secondItem="bGh-GE-o7Y" secondAttribute="trailing" id="DFb-rl-88W"/>
                             <constraint firstAttribute="bottom" secondItem="HdY-jZ-OPL" secondAttribute="bottom" id="UWv-PO-ZUb"/>
-                            <constraint firstItem="aDl-dq-Hxt" firstAttribute="top" secondItem="9pw-9S-H9n" secondAttribute="bottom" constant="40" id="Zht-Bd-u0g"/>
+                            <constraint firstItem="aDl-dq-Hxt" firstAttribute="top" secondItem="9pw-9S-H9n" secondAttribute="bottom" constant="30" id="Zht-Bd-u0g"/>
                             <constraint firstItem="HdY-jZ-OPL" firstAttribute="leading" secondItem="bMQ-WL-1q3" secondAttribute="leading" id="aT8-F5-M2B"/>
                             <constraint firstItem="9pw-9S-H9n" firstAttribute="top" secondItem="HPy-eH-c8q" secondAttribute="bottom" constant="5" id="bRH-j9-ajL"/>
                             <constraint firstItem="HPy-eH-c8q" firstAttribute="leading" secondItem="bMQ-WL-1q3" secondAttribute="leading" constant="25" id="cLl-cl-NuN"/>
