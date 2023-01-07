@@ -2,7 +2,7 @@
 
 iOS  application  that presents information about successful SpaceX launches.
 
-[![Swift Version][swift-image]][swift-url]  [![codecov.io](https://coveralls.io/repos/github/saeed3e/Build-status-and-code-coverage-badge/badge.svg?branch=master)](https://github.com/n7down/JacocoCodeCoverageBadge/blob/master/images/badge.png)
+[![Swift Version][swift-image]][swift-url]
 
 # Requirements
 * Xcode 13.4
