@@ -10,8 +10,7 @@ import Foundation
 extension Date: Dateable {
     func getPortolioCreatedDate() -> String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "dd MMMM yyyy - hh:mm"
-        formatter.timeZone = .current
+        formatter.dateFormat = "dd MMM yyyy, HH:mm z"
         return formatter.string(from: self)
     }
 

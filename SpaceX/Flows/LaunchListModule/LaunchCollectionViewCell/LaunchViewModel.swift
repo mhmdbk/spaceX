@@ -37,4 +37,12 @@ class LaunchViewModel {
     var isUpcoming: Bool {
         return launch.upcoming ?? false
     }
+
+    var imageUrl: URL? {
+        guard let imageUrlString = launch.images?.patch?.small,
+              let url = URL(string: imageUrlString) else {
+            return nil
+        }
+        return url
+    }
 }

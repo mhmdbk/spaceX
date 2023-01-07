@@ -13,7 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window:UIWindow?
 
     private lazy var appCoordinator: Coordinator = {
-        let appNavigationController: UINavigationController = CustomNavigationController()
+        let appNavigationController: UINavigationController = UINavigationController()
         let router = Router(navigationController: appNavigationController)
         return AppCoordinator(router: router)
     }()

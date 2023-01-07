@@ -15,7 +15,11 @@ enum ServiceError: Error {
 /// A service that knows how to perform requests for GitHub data.
 class SpacexService: NetworkService {
 
-    var baseUrl = "https://api.spacexdata.com/v4/"
+    private enum ApisConstant {
+        static let baseUrl = "https://api.spacexdata.com/v4/"
+        static let rocketEndpoint = "rockets"
+        static let launchesEndpoint = "launches"
+    }
 
     private let session: URLSession
 
@@ -26,7 +30,7 @@ class SpacexService: NetworkService {
     /// - Parameters: None
     /// - Returns: A list of most upcoming launches for the last 3 years
     func getUpcomingTrips(completion: @escaping (Result<[Launch], ServiceError>) -> Void) {
-        let urlString = baseUrl + "launches"
+        let urlString = ApisConstant.baseUrl + ApisConstant.launchesEndpoint
         AF.request(urlString).responseData { response in
             switch response.result {
             case .success(let launchList):
@@ -45,7 +49,7 @@ class SpacexService: NetworkService {
     /// - Parameters: id: String (id of the rocket)
     /// - Returns: Get Rocket details for a launch
     func getRocketDetails(id: String, completion: @escaping (Result<Rocket, ServiceError>) -> Void) {
-        let urlString = baseUrl + "rockets/\(id)"
+        let urlString = ApisConstant.baseUrl + ApisConstant.rocketEndpoint + "/\(id)"
         AF.request(urlString).responseData { response in
             switch response.result {
             case .success(let rocketResult):

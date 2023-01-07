@@ -32,11 +32,12 @@
 		F60123AB29647ABC007DF5D4 /* LaunchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123AA29647ABC007DF5D4 /* LaunchListViewModel.swift */; };
 		F60123AD29647AEA007DF5D4 /* RocketDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123AC29647AEA007DF5D4 /* RocketDetailsViewController.swift */; };
 		F60123AF29647AF7007DF5D4 /* RocketDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123AE29647AF7007DF5D4 /* RocketDetailsViewModel.swift */; };
-		F60123B729647C85007DF5D4 /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123B629647C85007DF5D4 /* CustomNavigationController.swift */; };
 		F60123B9296485F0007DF5D4 /* LaunchListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60123B8296485F0007DF5D4 /* LaunchListViewController.storyboard */; };
 		F60123BB296485FF007DF5D4 /* RocketDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60123BA296485FF007DF5D4 /* RocketDetailsViewController.storyboard */; };
 		F60123BD29648651007DF5D4 /* StoryboardLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60123BC29648651007DF5D4 /* StoryboardLoadable.swift */; };
 		F604B43A2966C83D005B9081 /* UIView+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = F604B4392966C83D005B9081 /* UIView+CornerRadius.swift */; };
+		F604B43C2968EC94005B9081 /* Links.swift in Sources */ = {isa = PBXBuildFile; fileRef = F604B43B2968EC94005B9081 /* Links.swift */; };
+		F604B43E2968ED0F005B9081 /* Patch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F604B43D2968ED0F005B9081 /* Patch.swift */; };
 		F6898EB72964C203009A444F /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6898EB62964C203009A444F /* UIViewController+Extensions.swift */; };
 		F6898EB92964C532009A444F /* String+ToDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6898EB82964C532009A444F /* String+ToDate.swift */; };
 		F6898EBB2964C557009A444F /* Date+Dateable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6898EBA2964C557009A444F /* Date+Dateable.swift */; };
@@ -89,11 +90,12 @@
 		F60123AA29647ABC007DF5D4 /* LaunchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListViewModel.swift; sourceTree = "<group>"; };
 		F60123AC29647AEA007DF5D4 /* RocketDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailsViewController.swift; sourceTree = "<group>"; };
 		F60123AE29647AF7007DF5D4 /* RocketDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketDetailsViewModel.swift; sourceTree = "<group>"; };
-		F60123B629647C85007DF5D4 /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
 		F60123B8296485F0007DF5D4 /* LaunchListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchListViewController.storyboard; sourceTree = "<group>"; };
 		F60123BA296485FF007DF5D4 /* RocketDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RocketDetailsViewController.storyboard; sourceTree = "<group>"; };
 		F60123BC29648651007DF5D4 /* StoryboardLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLoadable.swift; sourceTree = "<group>"; };
 		F604B4392966C83D005B9081 /* UIView+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+CornerRadius.swift"; sourceTree = "<group>"; };
+		F604B43B2968EC94005B9081 /* Links.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Links.swift; sourceTree = "<group>"; };
+		F604B43D2968ED0F005B9081 /* Patch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patch.swift; sourceTree = "<group>"; };
 		F6898EB62964C203009A444F /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F6898EB82964C532009A444F /* String+ToDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ToDate.swift"; sourceTree = "<group>"; };
 		F6898EBA2964C557009A444F /* Date+Dateable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Dateable.swift"; sourceTree = "<group>"; };
@@ -186,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				F601236229643267007DF5D4 /* AppDelegate.swift */,
-				F60123B629647C85007DF5D4 /* CustomNavigationController.swift */,
 				F601238029645C10007DF5D4 /* DependencyProvider.swift */,
 				F601239029647953007DF5D4 /* AppCoordinator.swift */,
 			);
@@ -264,7 +265,9 @@
 			isa = PBXGroup;
 			children = (
 				F6012388296469CA007DF5D4 /* Launch.swift */,
+				F604B43B2968EC94005B9081 /* Links.swift */,
 				F601238A296469CE007DF5D4 /* Rocket.swift */,
+				F604B43D2968ED0F005B9081 /* Patch.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -507,7 +510,6 @@
 				F60123A529647A52007DF5D4 /* AppModuleFactoryType.swift in Sources */,
 				F6898EBB2964C557009A444F /* Date+Dateable.swift in Sources */,
 				F6898EB92964C532009A444F /* String+ToDate.swift in Sources */,
-				F60123B729647C85007DF5D4 /* CustomNavigationController.swift in Sources */,
 				F6898ED629658975009A444F /* LaunchCollectionViewCell.swift in Sources */,
 				F6012399296479D1007DF5D4 /* CoordinatorType.swift in Sources */,
 				F6898EDB2965A250009A444F /* CellIdentifiable.swift in Sources */,
@@ -521,9 +523,11 @@
 				F60123BD29648651007DF5D4 /* StoryboardLoadable.swift in Sources */,
 				F601236329643267007DF5D4 /* AppDelegate.swift in Sources */,
 				F6012387296467DD007DF5D4 /* SpacexService.swift in Sources */,
+				F604B43C2968EC94005B9081 /* Links.swift in Sources */,
 				F6898EBD2964C56C009A444F /* Dateable.swift in Sources */,
 				F601239429647982007DF5D4 /* BaseCoordinator.swift in Sources */,
 				F601239F296479E5007DF5D4 /* RouterType.swift in Sources */,
+				F604B43E2968ED0F005B9081 /* Patch.swift in Sources */,
 				F601238B296469CE007DF5D4 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -664,6 +668,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85TWJ8G7R5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -676,7 +681,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.spacex.SpaceX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spacex.mvvm.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -692,6 +697,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 85TWJ8G7R5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SpaceX/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -704,7 +710,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.spacex.SpaceX;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spacex.mvvm.SpaceX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

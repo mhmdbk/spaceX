@@ -15,7 +15,8 @@ struct Launch: Decodable {
     let rocket: String?
     let date: String?
     let flightNumber: Int?
-    
+    let images: Links?
+
     enum CodingKeys: String, CodingKey {
         case name
         case details
@@ -24,5 +25,6 @@ struct Launch: Decodable {
         case success
         case date = "date_utc"
         case flightNumber = "flight_number"
+        case images = "links"
     }
 }

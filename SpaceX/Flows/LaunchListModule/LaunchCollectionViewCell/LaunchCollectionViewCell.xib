@@ -26,42 +26,52 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMQ-WL-1q3">
-                        <rect key="frame" x="10" y="0.0" width="207" height="170"/>
+                        <rect key="frame" x="10" y="10" width="207" height="150"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launch" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-jZ-OPL">
-                                <rect key="frame" x="0.0" y="0.0" width="207" height="170"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HdY-jZ-OPL">
+                                <rect key="frame" x="0.0" y="0.0" width="207" height="150"/>
                                 <color key="backgroundColor" red="0.074509803921568626" green="0.30980392156862746" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGh-GE-o7Y">
-                                <rect key="frame" x="0.0" y="0.0" width="207" height="170"/>
+                                <rect key="frame" x="0.0" y="0.0" width="207" height="150"/>
                                 <color key="backgroundColor" red="0.074509803921568626" green="0.30980392156862746" blue="0.53725490196078429" alpha="0.73278485228683776" colorSpace="custom" customColorSpace="displayP3"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="34787" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPy-eH-c8q">
-                                <rect key="frame" x="25" y="25" width="52.5" height="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HPy-eH-c8q">
+                                <rect key="frame" x="25" y="25" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Lato-Black" family="Lato" pointSize="18"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24 Feb 2022, 11:25 GMT +5" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pw-9S-H9n">
-                                <rect key="frame" x="25" y="52" width="162" height="14.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pw-9S-H9n">
+                                <rect key="frame" x="25" y="30" width="162" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="12"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Columbia launching" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDl-dq-Hxt">
-                                <rect key="frame" x="20" y="101.5" width="167" height="16"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aDl-dq-Hxt">
+                                <rect key="frame" x="20" y="70" width="167" height="0.0"/>
                                 <fontDescription key="fontDescription" name="Lato-Bold" family="Lato" pointSize="13"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vUe-ba-Jco">
-                                <rect key="frame" x="20" y="136" width="177" height="4"/>
+                                <rect key="frame" x="20" y="126" width="177" height="4"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" red="0.79607843137254897" green="0.60784313725490191" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </progressView>
                         </subviews>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="vUe-ba-Jco" secondAttribute="bottom" constant="30" id="0ZC-38-Ct8"/>
+                            <constraint firstAttribute="bottom" secondItem="vUe-ba-Jco" secondAttribute="bottom" constant="20" id="0ZC-38-Ct8"/>
                             <constraint firstAttribute="bottom" secondItem="bGh-GE-o7Y" secondAttribute="bottom" id="1fz-Yl-PLe"/>
                             <constraint firstItem="HdY-jZ-OPL" firstAttribute="top" secondItem="bMQ-WL-1q3" secondAttribute="top" id="43I-DF-R8Z"/>
                             <constraint firstItem="aDl-dq-Hxt" firstAttribute="leading" secondItem="bMQ-WL-1q3" secondAttribute="leading" constant="20" id="8uS-eK-Oqg"/>
@@ -70,36 +80,36 @@
                             <constraint firstAttribute="trailing" secondItem="9pw-9S-H9n" secondAttribute="trailing" constant="20" id="C0U-is-Fyd"/>
                             <constraint firstAttribute="trailing" secondItem="bGh-GE-o7Y" secondAttribute="trailing" id="DFb-rl-88W"/>
                             <constraint firstAttribute="bottom" secondItem="HdY-jZ-OPL" secondAttribute="bottom" id="UWv-PO-ZUb"/>
+                            <constraint firstItem="aDl-dq-Hxt" firstAttribute="top" secondItem="9pw-9S-H9n" secondAttribute="bottom" constant="40" id="Zht-Bd-u0g"/>
                             <constraint firstItem="HdY-jZ-OPL" firstAttribute="leading" secondItem="bMQ-WL-1q3" secondAttribute="leading" id="aT8-F5-M2B"/>
                             <constraint firstItem="9pw-9S-H9n" firstAttribute="top" secondItem="HPy-eH-c8q" secondAttribute="bottom" constant="5" id="bRH-j9-ajL"/>
                             <constraint firstItem="HPy-eH-c8q" firstAttribute="leading" secondItem="bMQ-WL-1q3" secondAttribute="leading" constant="25" id="cLl-cl-NuN"/>
                             <constraint firstAttribute="trailing" secondItem="aDl-dq-Hxt" secondAttribute="trailing" constant="20" id="cm4-bd-dtF"/>
-                            <constraint firstItem="aDl-dq-Hxt" firstAttribute="top" secondItem="9pw-9S-H9n" secondAttribute="bottom" constant="35" id="dal-bw-pzE"/>
                             <constraint firstItem="bGh-GE-o7Y" firstAttribute="leading" secondItem="bMQ-WL-1q3" secondAttribute="leading" id="fH0-lu-6bv"/>
                             <constraint firstAttribute="trailing" secondItem="vUe-ba-Jco" secondAttribute="trailing" constant="10" id="ilX-jl-yRE"/>
                             <constraint firstItem="HPy-eH-c8q" firstAttribute="top" secondItem="bMQ-WL-1q3" secondAttribute="top" constant="25" id="ojb-14-pxp"/>
                             <constraint firstAttribute="trailing" secondItem="HdY-jZ-OPL" secondAttribute="trailing" id="sUr-0i-T3b"/>
                             <constraint firstItem="vUe-ba-Jco" firstAttribute="leading" secondItem="bMQ-WL-1q3" secondAttribute="leading" constant="20" id="vRJ-YI-yuh"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
-                <constraint firstItem="bMQ-WL-1q3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="dhD-SB-Obp"/>
+                <constraint firstItem="bMQ-WL-1q3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="dhD-SB-Obp"/>
                 <constraint firstItem="bMQ-WL-1q3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="gWb-fm-cB1"/>
                 <constraint firstAttribute="trailing" secondItem="bMQ-WL-1q3" secondAttribute="trailing" constant="10" id="iEb-2B-BSE"/>
-                <constraint firstAttribute="bottom" secondItem="bMQ-WL-1q3" secondAttribute="bottom" id="oDb-80-PmM"/>
+                <constraint firstAttribute="bottom" secondItem="bMQ-WL-1q3" secondAttribute="bottom" constant="10" id="oDb-80-PmM"/>
             </constraints>
             <size key="customSize" width="227" height="170"/>
-            <userDefinedRuntimeAttributes>
-                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                    <real key="value" value="45"/>
-                </userDefinedRuntimeAttribute>
-            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="dateLabel" destination="9pw-9S-H9n" id="ymK-Un-WEy"/>
-                <outlet property="mainView" destination="bMQ-WL-1q3" id="2Xt-PL-PgD"/>
+                <outlet property="launchImageView" destination="HdY-jZ-OPL" id="3sp-6H-Vt2"/>
                 <outlet property="nameLabel" destination="aDl-dq-Hxt" id="hPq-Jx-Vmb"/>
                 <outlet property="numberLabel" destination="HPy-eH-c8q" id="hDX-zp-zHo"/>
                 <outlet property="progressView" destination="vUe-ba-Jco" id="CS6-Bg-4xX"/>
@@ -107,7 +117,4 @@
             <point key="canvasLocation" x="-6.5217391304347831" y="62.946428571428569"/>
         </collectionViewCell>
     </objects>
-    <resources>
-        <image name="launch" width="191" height="200.5"/>
-    </resources>
 </document>

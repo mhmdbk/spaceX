@@ -13,8 +13,8 @@ class LaunchCollectionViewCell: UICollectionViewCell, CellIdentifiable {
     @IBOutlet private weak var dateLabel: UILabel!
     @IBOutlet private weak var nameLabel: UILabel!
     @IBOutlet private weak var progressView: UIProgressView!
-    @IBOutlet weak var mainView: UIView!
-
+    @IBOutlet private weak var launchImageView: UIImageView!
+    
     var viewModel: LaunchViewModel!
 
     func configure(viewModel: LaunchViewModel) {
@@ -23,6 +23,9 @@ class LaunchCollectionViewCell: UICollectionViewCell, CellIdentifiable {
         dateLabel.text = viewModel.dateText
         if let flightNumber = viewModel.flightNumber {
             numberLabel.text = "\(flightNumber)"
+        }
+        if let url = viewModel.imageUrl {
+            launchImageView.kf.setImage(with: url)
         }
         progressView.isHidden = !viewModel.isUpcoming
     }
